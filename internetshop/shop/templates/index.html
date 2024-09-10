@@ -1,0 +1,33 @@
+{% load static %}<link rel="stylesheet" href="{% static 'style.css' %}">
+<div class="heading">
+    <div class="logo">        <h1 class="logoText">АктивныйМагазин</h1>
+    </div>
+ <div class="navigation">
+     <a class="navlink" href="/">Главная</a>
+     <a class="navlink" href="/products">Товары</a>
+     <a class="navlink" href="/discounts">Акции</a>
+    </div>
+
+<div class="productList">
+
+    {% for product in products %}
+<div class ="product">    <img src="https://c.dns-shop.ru/thumb/st4/fit/200/200/651472af9ff22b190508adc5d4631a03/0fd475b2a5e048e68756058d65ad6ba3d8b52e6d5bb9ef52770a7f1d7eff3762.jpg.webp">
+   <div>
+       <a href="/product/{{ product.id }}">
+    <h2>Самокат</h2>
+       </a>
+    <p>Самокат- это уличное транспортное средство, приводимое в движение человеком, с рулём, декой и колесами, приводимыми в движение наездником, отталкивающимся от земли ногой.</p>       </div>
+    <div class="price">        <h3>14 990 ₽</h3>
+        <button>Купить</button>
+    </div>
+    </div>
+    {% endfor %}
+<div class="product">    <img src="https://www.major-motor.ru/images/models/model_big/SEA-MY22-RXP-X-withoutSS-300-Eclipse-Black-SKU00021NE00-Studio-34FR-NA-500.png">
+    <div>        <a href="/product/{{ product.id }}">
+    <h2>Гидроцикл</h2>        </a>
+    <p>Гидроцикл- это скоростное персональное водное транспортное средство (плавсредство) со стационарным двигателем внутреннего сгорания или электродвигателем, предназначенное для движения путём глиссирования по водной поверхности. Гидроциклы обычно имеют длину до трёх метров и грузоподъёмность до 300 килограммов, могут развивать скорость до 200 км/ч.</p>        </div>
+    <div class="price">        <h3>35 000 ₽</h3>
+        <button>Купить</button>    </div>
+</div>
+    </div>
+
