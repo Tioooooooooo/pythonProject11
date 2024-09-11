@@ -12,13 +12,19 @@
 <div class="product">
     <img src="{{ product.image_url }}"/>
     <div>
-        <h2>{{ product.name }}</h2>
+
+            <h2>{{ product.name }}</h2>
+
         <p>{{ product.description }}</p>
     </div>
 
     <div class="price">
+
         <h3>{{ product.price }} ₽</h3>
+
+        <a href="/product/{{ product.id }}">
         <button>Купить</button>
+             </a>
     </div>
 </div>
 {% endfor %}

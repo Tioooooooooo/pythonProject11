@@ -7,23 +7,42 @@
     max-height: 300px;}
 
 img {    width: 200px;    height: 200px;
-}.product {    display: flex;
-    flex-direction: row;    height: 250px;
-    margin-top: 20px;    background-color: white;
-    border-radius: 23px;    padding: 10px;
-    width: 100%;    min-height: 250px;
-    margin-top: 20px;    background-color: white;
-    border-radius: 20px;    padding: 10px;    width: 100%;
+}
+
+.product {    display: flex;
+    flex-direction: row;
+    height: 250px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 23px;
+    padding: 10px;
+    width: 100%;
+    min-height: 250px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+
 }.productList {
-    display: flex;    flex-direction: column;
-    align-items: center;}h2 {    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+    h2 {    width: 300px;
 }p {    width: 700px;}
 button {
-margin-left: auto;}.navigation {
+margin-left: auto;}
+
+.navigation {
     display: flex;    flex-direction: row;    align-items: center;    justify-content: center;
     background-color: white;    padding: 0;    margin: 0;
-    height: 70px;}a {    margin-left: 20px;
+    height: 70px;}
+
+    a {    margin-left: 20px;
     text-decoration: none;    color: #0021f3;    font-size: 20px;}
+
+
 button {
     height: 50px;    width: 100px;    border: none;
     border-radius: 10px;    cursor: pointer;}
@@ -33,6 +52,8 @@ button {
     display: flex;    flex-direction: row;
     width: 50%;    margin-left: auto;
     margin-right: auto;    }
+
+
 .priceSection {
     min-width: 100px;    text-align: center;
     margin-left: 20px;}
