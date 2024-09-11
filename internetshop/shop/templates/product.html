@@ -12,18 +12,17 @@
 </div>
 
 <div class="productDetails">
-    <img src="https://cdn.poryadok.ru/upload/iblock/f1a/f1a35d9e5c981c801dc5e6d2040ecf41.jpg">
+    <img class="productImage" src="{{ product.image_url }}">
     <div>
-        <h1>Самокат</h1>
+        <h1>{{ product.name }}</h1>
         <div class="productPrice">
-            <p>14999 рублей</p>
+            <p>{{ product.price }} ₽</p>
             <button>Купить</button>
         </div>
     </div>
 </div>
 
 <div class="productDescription">
-    <h2>Характеристики: </h2>
 
     {% if product.speed %}
         <p>Скорость: {{ product.speed }} км/ч</p>
