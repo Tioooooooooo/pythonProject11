@@ -12,3 +12,5 @@ def view_product(request, id):
     return render(request, 'product.html', {
         'product': product
     })
+def view_product(request):
+    return render(request, 'product.html')
